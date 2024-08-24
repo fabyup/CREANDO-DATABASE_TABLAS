@@ -1,6 +1,6 @@
 const{createConnection} = require("mysql2/promise");
 
-
+const leer = require("prompt-sync")();
 
 async function main() {
   const conexionDB = await createConnection({
