@@ -1,4 +1,4 @@
-const{createConnection} = require("mysql2/promise");
+const { createConnection } = require("mysql2/promise");
 
 const leer = require("prompt-sync")();
 
@@ -7,7 +7,7 @@ async function main() {
     host: "localhost",
     user: "root",
     password: "12345",
-    database: "MAYORISTA"
+    database: "MAYORISTA",
   });
   const resultado = await conexionDB.query("SELECT * FRom productos");
   conexionDB.end();
